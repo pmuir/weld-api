@@ -20,7 +20,7 @@ import org.jboss.weld.bootstrap.api.Bootstrap;
 import org.jboss.weld.bootstrap.api.Environment;
 import org.jboss.weld.bootstrap.spi.BeanDeploymentArchive;
 import org.jboss.weld.bootstrap.spi.Deployment;
-import org.jboss.weld.context.api.BeanStore;
+import org.jboss.weld.context.BeanStore;
 import org.jboss.weld.manager.api.WeldManager;
 
 /**

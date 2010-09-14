@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.jboss.weld.context.api;
+package org.jboss.weld.context;
 
 import java.util.Collection;
 

@@ -21,8 +21,8 @@ import java.util.Set;
 
 import javax.enterprise.context.spi.Contextual;
 
-import org.jboss.weld.context.api.BeanStore;
-import org.jboss.weld.context.api.ContextualInstance;
+import org.jboss.weld.context.BeanStore;
+import org.jboss.weld.context.ContextualInstance;
 
 public abstract class AbstractMapBackedBeanStore implements BeanStore
 {
@@ -40,7 +40,7 @@ public abstract class AbstractMapBackedBeanStore implements BeanStore
     * @param The bean to look for
     * @return An instance, if found
     * 
-    * @see org.jboss.weld.context.api.BeanStore#get(BaseBean)
+    * @see org.jboss.weld.context.BeanStore#get(BaseBean)
     */
    public <T extends Object> ContextualInstance<T> get(String id)
    {
@@ -52,7 +52,7 @@ public abstract class AbstractMapBackedBeanStore implements BeanStore
    /**
     * Clears the store
     * 
-    * @see org.jboss.weld.context.api.BeanStore#clear()
+    * @see org.jboss.weld.context.BeanStore#clear()
     */
    public void clear()
    {
@@ -64,7 +64,7 @@ public abstract class AbstractMapBackedBeanStore implements BeanStore
     * 
     * @return The beans present
     * 
-    * @see org.jboss.weld.context.api.BeanStore#getContextuals()
+    * @see org.jboss.weld.context.BeanStore#getContextuals()
     */
    public Set<String> getContextualIds()
    {
@@ -77,7 +77,7 @@ public abstract class AbstractMapBackedBeanStore implements BeanStore
     * @param bean The bean
     * @param instance the instance
     * 
-    * @see org.jboss.weld.context.api.BeanStore#put(Contextual, Object)
+    * @see org.jboss.weld.context.BeanStore#put(Contextual, Object)
     */
    public <T> void put(String id, ContextualInstance<T> beanInstance)
    {

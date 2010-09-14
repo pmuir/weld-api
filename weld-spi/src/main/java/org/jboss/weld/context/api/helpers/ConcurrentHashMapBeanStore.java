@@ -21,7 +21,7 @@ import java.io.Serializable;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.jboss.weld.context.api.ContextualInstance;
+import org.jboss.weld.context.ContextualInstance;
 
 /**
  * A BeanStore that uses a HashMap as backing storage

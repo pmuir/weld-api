@@ -14,11 +14,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jboss.weld.bootstrap.api;
+package org.jboss.weld.context;
 
 import javax.enterprise.context.spi.Context;
-
-import org.jboss.weld.context.api.BeanStore;
 
 /**
  * Note Lifecycle is not complete, and the API may change.

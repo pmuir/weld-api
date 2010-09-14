@@ -14,12 +14,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jboss.weld.bootstrap.api.helpers;
+package org.jboss.weld.context.helpers;
 
 import javax.enterprise.context.spi.Context;
 
-import org.jboss.weld.bootstrap.api.Lifecycle;
-import org.jboss.weld.context.api.BeanStore;
+import org.jboss.weld.context.BeanStore;
+import org.jboss.weld.context.Lifecycle;
+
 
 /**
  * @author pmuir

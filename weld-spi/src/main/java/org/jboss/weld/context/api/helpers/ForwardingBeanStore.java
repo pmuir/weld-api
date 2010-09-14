@@ -18,8 +18,8 @@ package org.jboss.weld.context.api.helpers;
 
 import java.util.Collection;
 
-import org.jboss.weld.context.api.BeanStore;
-import org.jboss.weld.context.api.ContextualInstance;
+import org.jboss.weld.context.BeanStore;
+import org.jboss.weld.context.ContextualInstance;
 
 public abstract class ForwardingBeanStore implements BeanStore
 {
