@@ -23,6 +23,4 @@ import javax.servlet.http.HttpSessionListener;
 public interface ServletListener extends ServletContextListener, ServletRequestListener, HttpSessionListener
 {
    
-   
-   
 }

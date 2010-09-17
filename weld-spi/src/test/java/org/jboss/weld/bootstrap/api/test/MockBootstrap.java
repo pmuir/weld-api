@@ -32,7 +32,7 @@ import org.jboss.weld.bootstrap.spi.BeanDeploymentArchive;
 import org.jboss.weld.bootstrap.spi.BeansXml;
 import org.jboss.weld.bootstrap.spi.Deployment;
 import org.jboss.weld.bootstrap.spi.Metadata;
-import org.jboss.weld.context.BeanStore;
+import org.jboss.weld.context.api.BeanStore;
 import org.jboss.weld.manager.api.WeldManager;
 
 public class MockBootstrap implements Bootstrap
