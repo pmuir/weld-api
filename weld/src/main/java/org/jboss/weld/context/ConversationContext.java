@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import javax.enterprise.context.Conversation;
 
+import org.jboss.weld.context.bound.BoundConversationContext;
 import org.jboss.weld.context.http.HttpConversationContext;
 
 /**
@@ -13,9 +14,10 @@ import org.jboss.weld.context.http.HttpConversationContext;
  * </p>
  * 
  * <p>
- * Currently Weld comes with one implementation of the conversation context,
+ * Currently Weld comes with two implementation of the conversation context,
  * {@link HttpConversationContext} in which conversations are isolated to the
- * Http Session.
+ * Http Session and {@link BoundConversationContext} in which conversations are
+ * backed by a pair of maps.
  * </p>
  */
 public interface ConversationContext extends ManagedContext

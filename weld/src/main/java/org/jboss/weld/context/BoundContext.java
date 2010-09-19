@@ -9,11 +9,18 @@ import javax.enterprise.context.spi.Context;
  * </p>
  * 
  * <p>
- * A context may be <em>dettachable</em> in which case a call to
- * {@link ManagedContext#invalidate()} will dettach the context from it's
- * associated storage. A dettached context is still usable (instances may be
+ * A context may be <em>detachable</em> in which case a call to
+ * {@link ManagedContext#invalidate()} will detach the context from it's
+ * associated storage. A detached context is still usable (instances may be
  * added or removed) however changes will not be written through to the
  * underlying data store.
+ * </p>
+ * 
+ * <p>
+ * Normally, a detachable context will have it's underlying bean store attached
+ * on a call to {@link ManagedContext#activate()} and detached on a call to
+ * {@link ManagedContext#deactivate()} however a subtype of {@link BoundContext}
+ * may change this behavior.
  * </p>
  * 
  * @author Pete Muir

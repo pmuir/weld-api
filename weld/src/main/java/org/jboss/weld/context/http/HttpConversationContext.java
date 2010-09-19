@@ -6,6 +6,15 @@ import javax.servlet.http.HttpSession;
 import org.jboss.weld.context.BoundContext;
 import org.jboss.weld.context.ConversationContext;
 
+/**
+ * An Http Session backed conversation context. A transient conversation will be
+ * detached from the underlying session. If the conversation is promoted to long
+ * running, context will be attached to the underlying Http Session at the end
+ * of the request.
+ * 
+ * @author Pete Muir
+ * 
+ */
 public interface HttpConversationContext extends BoundContext<HttpServletRequest>, ConversationContext
 {
 
