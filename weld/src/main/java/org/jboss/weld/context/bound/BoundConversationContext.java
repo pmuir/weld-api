@@ -31,11 +31,11 @@ public interface BoundConversationContext extends ConversationContext, BoundCont
 {
 
    /**
-    * Destroy all conversations in the session
+    * Destroy all conversations in the session.
     * 
     * @param session the session for which to destroy all conversations
     * @return
     */
-   public boolean invalidate(Map<String, Object> session);
+   public boolean destroy(Map<String, Object> session);
 
 }

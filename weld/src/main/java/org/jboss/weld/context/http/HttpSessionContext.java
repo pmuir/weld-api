@@ -21,8 +21,7 @@ public interface HttpSessionContext extends BoundContext<HttpServletRequest>, Se
 
    /**
     * <p>
-    * A special version of invalidate that handle being called outside of an
-    * Http Request.
+    * Destroy all non-transient conversations associated with the request.
     * </p>
     * 
     * <p>
@@ -42,6 +41,6 @@ public interface HttpSessionContext extends BoundContext<HttpServletRequest>, Se
     *           instances
     * @return true if the context was destroyed immediately
     */
-   public boolean invalidate(HttpSession session);
+   public boolean destroy(HttpSession session);
 
 }
